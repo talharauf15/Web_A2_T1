@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="sign-in&sign-up(style).css">
+</head>
+
+<body>
+    <!-- sign-up -->
+    <div class="container-form">
+        <form id="signInForm">
+
+            <div class="form-group">
+                <label for="username" class="labelcss">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="labelcss">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="labelcss">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Cpassword" class="labelcss">Conform Password:</label>
+                <input type="password" id="Cpassword" name="Cpassword" placeholder="Conform Password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone" class="labelcss"> Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="gender" class="labelcss">Gender:</label>
+                <input type="radio" id="male" name="gender" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" required>
+                <label for="female">Female</label>
+                <input type="radio" id="custom" name="gender" required>
+                <label for="custom">Custom</label>
+            </div>
+
+            
+            <button type="submit" onclick="validateSignIn()">Sign-Up</button>
+
+        </form>
+    </div>
+
+    <div class="container-form">
+        <a href="http://127.0.0.1:3000/sign-in.html" id="signUp">
+            <button type="button">Sign-In</button>
+        </a>
+    </div>
+
+
+</body>
+
+</html>

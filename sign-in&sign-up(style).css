@@ -12,7 +12,7 @@ body {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
+    margin: 20px auto;
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
@@ -23,15 +23,18 @@ body {
     margin-bottom: 20px;
 }
 
-label {
+.labelcss{
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
     text-align: center;
 }
 
+
 input[type="text"],
-input[type="password"] {
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
     width: 80%;
     padding: 8px;
     border-radius: 100px;
@@ -41,7 +44,8 @@ input[type="password"] {
     display: block;
 }
 
-button[type="submit"] {
+
+button{
     background-color: #ff3b3f;
     color: white;
     padding: 10px 20px;
@@ -49,27 +53,19 @@ button[type="submit"] {
     border-radius: 80px;
     cursor: pointer;
     width: 40%;
-    margin: 0 auto;
+    margin: 9px auto;
     display: block;
 }
 
-button[type="submit"]:hover {
+button:hover {
     background-color: #ff0000;
     color: #fff;
-    transition: 100ms;
 }
 
 .container-form:hover {
     box-shadow: 0 0 10px black;
 }
 
-button[type="button"] {
-    background-color: #ff3b3f;
-    color: white;
-    border-radius: 80px;
-    cursor: pointer;
-    padding: 10px 20px;
+#signUp {
+    text-decoration: none;
 }
-
-
-/* sign-in page ends */
