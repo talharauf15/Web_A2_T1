@@ -1,44 +1,75 @@
-body{
-    background-color: #efefef;
+body {
+    background-color: #a9a9a9;
     font-family: Georgia, 'Times New Roman', Times, serif;
     display: flex;
-    align-items:center;
+    align-items: center;
     height: 100vh;
 }
 
-.container-form{
+.container-form {
     background-color: #caebf2;
-    width: 80%;
+    width: 30%;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
 }
 
-.form-group{
+.form-group {
     margin-bottom: 20px;
 }
 
-label{
+label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    text-align: center;
 }
 
 input[type="text"],
-input[type="password"]{
+input[type="password"] {
     width: 80%;
     padding: 8px;
     border-radius: 100px;
     border: 3px solid #a9a9a9;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
 }
 
-button[type="submit"]{
+button[type="submit"] {
     background-color: #ff3b3f;
-    color: #3b0000;
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 80px;
     cursor: pointer;
     width: 40%;
+    margin: 0 auto;
+    display: block;
 }
+
+button[type="submit"]:hover {
+    background-color: #ff0000;
+    color: #fff;
+    transition: 100ms;
+}
+
+.container-form:hover {
+    box-shadow: 0 0 10px black;
+}
+
+button[type="button"] {
+    background-color: #ff3b3f;
+    color: white;
+    border-radius: 80px;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+
+/* sign-in page ends */
