@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-In</title>
     <link rel="stylesheet" href="sign-in&sign-up(style).css">
+    <script src="sign-in&sign-up(script).js"></script>
 </head>
 
-<body>
+<body id="sign-inbody">
     <!-- sign-in -->
     <div class="container-form">
         <form id="signInForm">
@@ -22,15 +23,19 @@
                 <input type="password" id="password" name="password" placeholder="Password" required>
             </div>
             <button type="submit" onclick="validateSignIn()">Sign-In</button>
+            <button type="reset">Reset</button>
+            <a href="http://127.0.0.1:3000/sign-up.html" id="signUp">
+                <button type="button" >Sign-up</button>
+            </a>
 
         </form>
     </div>
 
-    <div class="container-form">
+    <!-- <div class="container-form">
         <a href="http://127.0.0.1:3000/sign-up.html" id="signUp">
             <button type="button" >Sign-up</button>
         </a>
-    </div>
+    </div> -->
 
 
 </body>

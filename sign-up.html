@@ -19,11 +19,6 @@
             </div>
 
             <div class="form-group">
-                <label for="email" class="labelcss">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="E-mail" required>
-            </div>
-
-            <div class="form-group">
                 <label for="password" class="labelcss">Password:</label>
                 <input type="password" id="password" name="password" placeholder="Password" required>
             </div>
@@ -31,6 +26,11 @@
             <div class="form-group">
                 <label for="Cpassword" class="labelcss">Conform Password:</label>
                 <input type="password" id="Cpassword" name="Cpassword" placeholder="Conform Password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="labelcss">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="E-mail" required>
             </div>
 
             <div class="form-group">
@@ -50,15 +50,18 @@
 
             
             <button type="submit" onclick="validateSignIn()">Sign-Up</button>
-
+            <button type="reset">Reset</button>
+            <a href="http://127.0.0.1:3000/sign-in.html" id="signUp">
+                <button type="button">Sign-In</button>
+            </a>
         </form>
     </div>
 
-    <div class="container-form">
+    <!-- <div class="container-form">
         <a href="http://127.0.0.1:3000/sign-in.html" id="signUp">
             <button type="button">Sign-In</button>
         </a>
-    </div>
+    </div> -->
 
 
 </body>
