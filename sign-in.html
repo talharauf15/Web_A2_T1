@@ -21,21 +21,27 @@
             <div class="form-group">
                 <label for="password" class="labelcss">Password:</label>
                 <input type="password" id="password" name="password" placeholder="Password" required>
+                <input type="checkbox" id="showPassword" onclick="togglePasswordVisibility()"> Show Password
+                <div class="message">
+                    <ul>
+                        <li>Minimum 8 characters</li>
+                        <li>At least one uppercase letter</li>
+                        <li>At least one lowercase letter</li>
+                        <li>At least one number</li>
+                        <li>At least one special character</li>
+                    </ul>
+                </div>
             </div>
             <button type="submit" onclick="validateSignIn()">Sign-In</button>
             <button type="reset">Reset</button>
             <a href="http://127.0.0.1:3000/sign-up.html" id="signUp">
-                <button type="button" >Sign-up</button>
+                <button type="button">Sign-up</button>
             </a>
 
         </form>
     </div>
 
-    <!-- <div class="container-form">
-        <a href="http://127.0.0.1:3000/sign-up.html" id="signUp">
-            <button type="button" >Sign-up</button>
-        </a>
-    </div> -->
+
 
 
 </body>
